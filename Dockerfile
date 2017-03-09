@@ -5,8 +5,7 @@ COPY . /app
 WORKDIR /app
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-COPY docker-entrypoint.sh /user/local/bin/docker-entrypoint.sh
-RUN chmod +x /user/local/bin/docker-entrypoin.sh
+COPY docker-entrypoint.sh /user/local/bin/
 
 EXPOSE 80
 ENTRYPOINT["docker-entrypoint.sh"]
