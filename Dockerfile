@@ -9,4 +9,4 @@ COPY docker-entrypoint.sh /user/local/bin/
 
 EXPOSE 80
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD[""]
+CMD [""]
