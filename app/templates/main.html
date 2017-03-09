@@ -1,0 +1,34 @@
+<html>
+<body>
+<style type="text/css">
+body {text-align: center}
+</style>
+
+	<h1>Climacon</h1>
+
+	<form action="/" method="post">	
+		<input type="text" name="key">	
+	</form>
+
+	<form action="/" method="get">	
+		<input type="submit" name="button" value="History">		
+		<input type="submit" name="button" value="Help">	
+	</form>
+
+	{% if weather %}
+		<p>{{city}} {{weather}}</p>
+		<p>{{temp}} {{wind}}</p>
+	{% elif help %}
+		<p>{{help}}</p>
+		<p>输入城市名并按回车键，获取当前天气</p>
+		<p>点击Help，查看帮助</p>
+		<p>点击History，查看查询历史</p>
+	{% elif history %}
+		{% for i in history %}
+			<p>{{i}}</p>
+		{% endfor %}
+	{% else %}
+	{% endif %}
+
+</body>
+</html>
