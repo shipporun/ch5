@@ -8,5 +8,5 @@ RUN pip install -r requirements.txt
 COPY docker-entrypoint.sh /user/local/bin/
 
 EXPOSE 80
-ENTRYPOINT["docker-entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD[""]
