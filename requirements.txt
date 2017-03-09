@@ -1,4 +1,4 @@
 Flask==0.12
 Jinja2==2.9.4
 requests==2.12.5
-sqlite3==2.6.0
+sqlite3==3.14.2
