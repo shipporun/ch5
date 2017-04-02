@@ -4,4 +4,4 @@ COPY . /docker
 WORKDIR /docker
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD ["python3" "/app/init.py"]
+CMD ["python3", "./app/init.py"]
